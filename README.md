@@ -29,3 +29,6 @@ Vox Populi - Latin for "voice of the people" - is a platform where users directl
 - **Styling:** Tailwind CSS
 - **UI Components:** ShadCN UI
 - **Authentication:** Bcryptjs and jose for password hashing and session management.
+
+## Getting Started
+Review the documents in the docs folder to get started with Vox Populi.
