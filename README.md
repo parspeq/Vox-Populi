@@ -24,8 +24,7 @@ Vox Populi - Latin for "voice of the people" - is a platform where users directl
 
 - **Framework:** Next.js (with App Router)
 - **Language:** TypeScript
-- **Generative AI:** Google AI & Genkit
-- **Database:** PostgreSQL (managed by Neon)
+- **Database:** PostgreSQL
 - **ORM:** Drizzle ORM
 - **Styling:** Tailwind CSS
 - **UI Components:** ShadCN UI
