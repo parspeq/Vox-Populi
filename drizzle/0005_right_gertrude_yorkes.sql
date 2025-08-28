@@ -1,0 +1,1 @@
+ALTER TABLE "rate_limit_events" ADD COLUMN "action_type" text;
