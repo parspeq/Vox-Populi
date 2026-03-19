@@ -20,6 +20,30 @@ Vox Populi - Latin for "voice of the people" - is a platform where users directl
 - **User & Community Dashboards:** Provides pages for viewing overall platform statistics and personalized user contribution stats.
 - **Customizable UI:** Includes a theme switcher for light and dark modes and allows users to set personal preferences, such as the number of topics to display per page.
 
+## Governance & Moderation Logic
+
+**Vox Populi** operates on the principle of **subsidiarity**—the idea that matters should be handled by the smallest, least centralized competent authority: the users themselves.
+
+### The Lifecycle of a Report
+To prevent "mod-abuse" and ensure a transparent process, content moderation follows a democratic pipeline:
+
+1.  **Flagging:** Any authenticated user can report a post they deem inappropriate.
+2.  **The Community Queue:** Reported posts are automatically moved to a "Community Review" dashboard. They are not hidden immediately, ensuring the community can see what is being challenged.
+3.  **The Author's Appeal:** Before a vote is finalized, the author is notified and given the opportunity to submit a brief "Defense Statement." This statement is attached to the report for reviewers to read.
+4.  **Democratic Verdict:** Eligible community members (based on account age or contribution stats) vote on the outcome:
+    * ✅ **Keep:** The report is dismissed and the post remains.
+    * ❌ **Remove:** The post is hidden, and the author's "Reputation Score" is adjusted.
+5.  **Transparency:** All moderation actions are logged, creating a public record of how the community's "Voice" is being applied.
+
+---
+
+### 🛠️ Technical Implementation
+The moderation engine is built to be resilient against "brigading" (coordinated mass-reporting):
+
+* **Weighted Voting (Optional/Future):** Higher-contributing members can be given more weight in the moderation queue.
+* **Rate-Limiting:** Robust anti-spam measures prevent a single user from flooding the review queue.
+* **Threshold Logic:** Posts are only removed once a specific quorum or majority percentage is reached, preventing "minority silencing."
+
 ## Tech Stack
 
 - **Framework:** Next.js (with App Router)
